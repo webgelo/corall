@@ -1,0 +1,381 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Bitter_my";
+  src: local("Bitter");
+  src: url(../fonts/Bitter-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bitter_my";
+  src: local("Bitter");
+  src: url(../fonts/Bitter-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bitter_my";
+  src: local("Bitter");
+  src: url(../fonts/Bitter-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto_my";
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto_my";
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto_my";
+  src: local("Roboto");
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Caveat_my";
+  src: local("Caveat");
+  src: url(../fonts/Caveat-VariableFont_wght.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+.main-section {
+  min-height: 700px;
+}
+
+.logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.header {
+  position: relative;
+  width: 1140px;
+  height: 70px;
+  background-image: url("../img/header.png");
+  background-size: cover;
+  margin: 0 auto;
+  padding-left: 48px;
+}
+.header__logo {
+  position: absolute;
+  left: 48px;
+}
+.header__title {
+  position: absolute;
+  top: 25px;
+  left: 42%;
+  font-size: 22px;
+  color: white;
+  font-family: "Roboto_my";
+  font-weight: 500;
+  height: 30px;
+}
+.header__title span {
+  font-family: "Roboto_my";
+  font-weight: 300;
+}
+.header__icons {
+  width: 100px;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 20px;
+  right: 20px;
+}
+.icons__item {
+  height: 35px;
+  width: 35px;
+}
+
+.content-container {
+  width: 1140px;
+  height: 575px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  padding-top: 30px;
+}
+
+.content-container-main {
+  background-image: url("../img/Rear.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.content-container-main__title {
+  position: absolute;
+  top: 57px;
+  left: 16%;
+}
+.content-container-main__foto {
+  position: absolute;
+  bottom: 0px;
+  left: 63%;
+  width: 403px;
+}
+.content-container-main__decor {
+  border-radius: 0px 15px;
+  width: 34px;
+  height: 456px;
+  position: absolute;
+}
+.content-container-main__quote {
+  position: absolute;
+  left: 178px;
+  top: 504px;
+  font-family: "Caveat_my";
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.title {
+  font-size: 32px;
+  font-family: "Bitter_my";
+  font-weight: 600;
+  color: #4e4d4d;
+  text-align: center;
+}
+
+.decor_1 {
+  left: 83px;
+  top: 57px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.decor_2 {
+  transform: rotate(90deg);
+  left: 830px;
+  top: 285px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+nav {
+  background: #1d6a75;
+  width: 1140px;
+  height: 55px;
+  margin: 0 auto;
+  position: relative;
+}
+nav ul {
+  list-style: none;
+  height: 55px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0px 30px;
+  font-size: 18px;
+  font-family: "Roboto_my";
+  font-weight: 400;
+  display: block;
+  height: 55px;
+  float: left;
+  line-height: 55px;
+  margin-right: 5px;
+}
+nav ul li a:hover {
+  background: #3da3a6;
+  border-radius: 5px;
+  box-shadow: -1px -1px 2px #6ce4e8;
+  line-height: 53px;
+}
+
+.wrapper-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  position: absolute;
+  top: 153px;
+  left: 178px;
+  width: 550px;
+  height: 170px;
+}
+.wrapper-about__item {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  height: 70px;
+}
+.wrapper-about__icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+.wrapper-about__text {
+  width: 200px;
+  font-size: 14px;
+  font-family: "Bitter_my";
+  font-weight: 400;
+  line-height: 20px;
+}
+.wrapper-about__text span {
+  font-weight: 700;
+}
+
+.wrapper-btn {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 58px;
+  left: 178px;
+  top: 376px;
+}
+.wrapper-btn__btn {
+  width: 140px;
+  height: 58px;
+  background: rgba(61, 163, 166, 0.1);
+  border-radius: 10px;
+  border: 2px solid #288880;
+  color: #1a5b64;
+  font-family: "Roboto_my";
+  font-weight: 500;
+  font-size: 16px;
+}
+.wrapper-btn__btn:hover {
+  background: rgba(61, 163, 166, 0.3);
+}
+
+.info-section {
+  padding-top: 49px;
+  width: 1140px;
+  height: 860px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+}
+.info-section__title {
+  text-align: center;
+  margin-bottom: 44px;
+}
+.info-section__wrapper-box {
+  display: flex;
+  justify-content: space-between;
+  width: 1140x;
+  height: 340px;
+  margin-bottom: 44px;
+}
+.info-section__wrapper-box a {
+  text-decoration: none;
+}
+.info-section__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  height: 340px;
+  background-color: #e6f9f6;
+  border: 1px solid #3da3a6;
+  padding-top: 20px;
+}
+.info-section__box:hover {
+  background-color: #d1f4ef;
+  transform: translateY(-5px);
+}
+.info-section__icon {
+  height: 90px;
+  width: 90px;
+  margin-bottom: 10px;
+}
+.info-section__icon_aroma {
+  width: 150px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+.info-section__box-title {
+  font-family: "Bitter_my";
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Bitter_my";
+  margin-bottom: 19px;
+  text-align: center;
+  color: #4e4d4d;
+}
+.info-section__text {
+  margin: 0 35px;
+  font-family: "Bitter_my";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: #000;
+}
+.info-section__line {
+  border: none;
+  border: 1px solid #3da3a6;
+  width: 560px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+.info-section__wrapper-net {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info-section__net-box {
+  position: relative;
+  height: 249px;
+  width: 560px;
+  background-color: #ffffff;
+  border: 1px solid #3da3a6;
+  padding-top: 40px;
+}
+.info-section__icons-net {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 60px;
+  width: 60px;
+}
+.info-section__link-net {
+  text-decoration: none;
+}
+.info-section__link-net :hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: relative;
+  width: 1140px;
+  height: 160px;
+  background-color: #498b95;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+.footer__logo {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
+.footer__title {
+  margin-left: 180px;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Roboto_my";
+  font-weight: 400;
+}
+.footer__icons {
+  width: 120px;
+  top: 66px;
+  right: 70px;
+} /*# sourceMappingURL=style.css.map */
